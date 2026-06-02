@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Auto-select `superpowers:subagent-driven-development` or `superpowers:executing-plans` based on task coupling, subagent availability, and whether execution should stay in the current session. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a Japanese-first bilingual static holding site for タンポポ合同会社 / Tampopo LLC that links to Kanna and provides a lightly obfuscated email contact.
+**Goal:** Build a Japanese-first bilingual static holding site for タンポポ合同会社 / Tampopo LLC that shows the company logo, links to Kanna, and provides a lightly obfuscated email contact.
 
 **Architecture:** Use plain static assets so the site can run directly from the filesystem or GitHub Pages without a build step. Keep content in `index.html`, visual styling in `styles.css`, and email assembly in `script.js`.
 
@@ -15,6 +15,7 @@
 - Create `index.html`: semantic page structure, Japanese-first bilingual copy, Kanna link, and contact controls without the full email address in the HTML.
 - Create `styles.css`: responsive corporate holding-site layout, typography, buttons, and mobile behavior.
 - Create `script.js`: assemble the contact email from pieces and wire the contact controls to `mailto:`.
+- Create `assets/tampopo-logo.jpg`: local copy of the company logo.
 - Create `README.md`: short deployment notes for GitHub Pages.
 
 ### Task 1: Static HTML Skeleton
